@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://dnxxcn8eru1hh"]
+
+[ext_resource type="Texture2D" uid="uid://vi1t6u47x22s" path="res://Assets/electronics-kitchen/source/Electronics_kitchen/Electronics_kitchen/textures/Kitchen.jpg" id="1_jm5pn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5vdx"]
+resource_name = "Kitchen"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_jm5pn")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tqmdw"]
+_surfaces = [{
+"aabb": AABB(-0.0045482786, -0.004803856, -0.006933157, 0.009087998, 0.008642724, 0.012995911),
+"format": 34359742465,
+"index_count": 162,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAQAEAAMABQADAAQAAgADAAUABAAGAAUABwAGAAQABQAGAAcABAABAAcABwAIAAUABQAIAAIABwABAAkAAAAJAAEACAAHAAoACQAKAAcAAgAIAAsACgALAAgADAALAAoACwAMAAIACgAJAAwAAgANAAAADQACAAwADgAMAAkADQAMAA4AAAAPAAkACQAPAA4AEAAAAA0AAAAQAA8ADQARABAADQAOABEAEgAPABAADgAPABIAEwAQABEAEAATABIAEQAOABQAEgAUAA4AEQAVABMAFAAVABEAFgASABMAFwAVABQAGAAUABIAFAAYABcAEgAWABgAFQAXABkAGQATABUAGQAXABgAEwAZABYAGAAWABkAGgAbABwAHAAdABoAHAAbAB4AHgAfABwAHwAeACAAIAAhAB8A"),
+"name": "Kitchen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 34,
+"vertex_data": PackedByteArray("ugmVu6hKdrugQo87ugmVu3v+OzugQo877cGUO3v+OzugQo87nL2MO3v+OzsRqsY7aQWNu3v+OzsRqsY7nL2MO4OVezsRqsY7aQWNu4OVezsRqsY7ugmVu4OVezugQo877cGUO4OVezugQo87ugmVu3v+OzuJL+O7ugmVu4OVezuJL+O77cGUO4OVezuJL+O77cGUO3v+OzuJL+O77cGUO6hKdrugQo877cGUO6ppnbuJL+O7ugmVu6ppnbuJL+O7ugmVu6ppnbt26Hg77cGUO6ppnbt26Hg7pIqFu6ppnbvStzq7pIqFu6ppnbvx8VI75fWFO6ppnbvStzq75fWFO6ppnbvx8VI7pIqFu8idNzvStzq75fWFO8idNzvx8VI75fWFO8idNzvStzq7pIqFu8idNzvx8VI7B9aPO8idNzuSOSg4B9aPOxSTg7uSOSg4xmqPuxSTg7uSOSg4xmqPu8idNzuSOSg4B9aPOxSTg7tKNVC5xmqPuxSTg7tKNVC5B9aPO8idNztKNVC5xmqPu8idNztKNVC5")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bgg4n"]
+resource_name = "Stove_01"
+_surfaces = [{
+"aabb": AABB(-0.0045482786, -0.004803856, -0.006933157, 0.009087998, 0.008642724, 0.012995911),
+"attribute_data": PackedByteArray("chpxPlCa3j5yGnE+ClmFPk718j4KWYU+TvXyPlCa3j7W9yA8BHGgPtb3IDwo2qU+oNTePSjapT6g1N49BHGgPqDU3j3IotA+1vcgPMii0D6XCKw8+kagPm+0WTwATt8+9lDGPVg23z5+FFc8zkilPg4Fxj36RqA+oKnbPfpGoD4PBcY9ZFHfPqGp2z1kUd8+lwisPPpGoD72UMY9WjbfPm+0WTz+Td8+DgXGPfpGoD5+FFc8zkilPnIacT4esOw+chpxPlCa3j5O9fI+UJrePk718j4esOw+oIfEPTK1pj5+FFc8MrWmPn4UVzxCi8g+oIfEPUKLyD6g1N49+kagPtb3IDz6RqA+1/cgPGJR3z6h1N49YlHfPp5f2T1O2ZY+8p9MPE7Zlj4OBcY9TtmWPg4Fxj36RqA+oKnbPfpGoD6gqds9TtmWPqGp2z1kUd8+DQXGPWRR3z4OBcY9+kagPqCp2z36RqA+nl/ZPQRxoD6eX9k9KNqlPvKfTDwo2qU+8p9MPARxoD6eX9k9TtmWPqDU3j36RqA+1vcgPPpGoD7yn0w8TtmWPqCp2z1O2ZY+oKnbPfpGoD4OBcY9+kagPg4Fxj1O2ZY++xFfPoTEAD9OQh88gcQAP8iLQDyQgNs+/HtdPnKA2z7ef2Y+xMiPPj6dYj7MyZI+0ObdO87Jkj6g4CA7xMiPPt5/Zj7EyI8+hHNfPjxJAj+YSV4+goDbPqOWYj7MyZI+oOAgO8TIjz7Pjt47zsmSPkDfMzyAgNs+k/UYPDVJAj8OW3U8MrWmPh3C1D0ytaY+HcLUPUKLyD4OW3U8QovIPh3C1D2COaY+HcLUPcii0D4OW3U8yKLQPg5bdTyCOaY+oIfEPUKLyD5+FFc8QovIPn4UVzwytaY+oIfEPTK1pj4OW3U8gjmmPg5bdTzIotA+HcLUPcii0D4dwtQ9gjmmPlBuOT4ApY09UG45PrgvIz6+UIU9uC8jPr5QhT0ApY09UG45PgCljT2+UIU9AKWNPb5QhT24LyM+UG45PrgvIz5Qbjk+uC8jPr5QhT24LyM+vlCFPbgvIz5Qbjk+uC8jPg=="),
+"format": 34359742487,
+"index_count": 162,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAGAAUABQAJAAgACgALAAwACgANAAsACgAMAA4ADwAOABAAEAARAA8AEgATABQAEgAVABMAEgAUABYAFwAYABkAGQAaABcAGwAcAB0AHQAeABsAHwAgACEAIQAiAB8AIAAfACMAIwAkACAAJQAmACcAJwAoACUAKQAqACsAKwAsACkALQAuAC8ALwAwAC0AMQAyADMAMwA0ADEANQA2ADcANwA4ADUAOQA6ADsAOwA8ADkAPQA+AD8APwBAAD0AQQBCAEMAQwBEAEEARQBGAEcARwBIAEUASQBKAEsASwBMAEkATQBOAE8ATwBQAE0AUQBSAFMAUwBUAFEAVQBWAFcAVwBYAFUAWQBaAFsAWwBcAFkAXQBeAF8AXwBgAF0AYQBiAGMAYwBkAGEA"),
+"material": SubResource("StandardMaterial3D_p5vdx"),
+"name": "Kitchen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 101,
+"vertex_data": PackedByteArray("ugmVu6hKdrugQo87ugmVu3v+OzugQo877cGUO3v+OzugQo877cGUO6hKdrugQo87ugmVu4OVezuJL+O7ugmVu3v+OzuJL+O77cGUO3v+OzuJL+O77cGUO4OVezuJL+O77cGUO6ppnbuJL+O7ugmVu6ppnbuJL+O7ugmVu6hKdrugQo87ugmVu6ppnbuJL+O7ugmVu3v+OzuJL+O7ugmVu6ppnbt26Hg7ugmVu3v+OzugQo87ugmVu4OVezugQo87ugmVu3v+OzuJL+O7ugmVu4OVezuJL+O77cGUO6hKdrugQo877cGUO3v+OzuJL+O77cGUO6ppnbuJL+O77cGUO3v+OzugQo877cGUO6ppnbt26Hg7ugmVu6ppnbt26Hg7ugmVu6hKdrugQo877cGUO6hKdrugQo877cGUO6ppnbt26Hg75fWFO8idNzvx8VI75fWFO6ppnbvx8VI75fWFO6ppnbvStzq75fWFO8idNzvStzq77cGUO4OVezugQo87ugmVu4OVezugQo87ugmVu4OVezuJL+O77cGUO4OVezuJL+O7nL2MO4OVezsRqsY7aQWNu4OVezsRqsY7aQWNu3v+OzsRqsY7ugmVu3v+OzugQo87ugmVu4OVezugQo87aQWNu4OVezsRqsY77cGUO4OVezuJL+O77cGUO3v+OzuJL+O77cGUO3v+OzugQo877cGUO4OVezugQo87nL2MO4OVezsRqsY7nL2MO3v+OzsRqsY7aQWNu3v+OzsRqsY7aQWNu4OVezsRqsY7nL2MO3v+OzsRqsY77cGUO3v+OzugQo87ugmVu3v+OzugQo87aQWNu3v+OzsRqsY7nL2MO4OVezsRqsY77cGUO4OVezugQo877cGUO3v+OzugQo87nL2MO3v+OzsRqsY77cGUO6ppnbuJL+O7ugmVu6ppnbuJL+O7pIqFu6ppnbvStzq75fWFO6ppnbvStzq77cGUO6ppnbt26Hg75fWFO6ppnbvx8VI7pIqFu6ppnbvx8VI7ugmVu6ppnbt26Hg77cGUO6ppnbt26Hg77cGUO6ppnbuJL+O75fWFO6ppnbvStzq75fWFO6ppnbvx8VI7ugmVu6ppnbt26Hg7pIqFu6ppnbvx8VI7pIqFu6ppnbvStzq7ugmVu6ppnbuJL+O7pIqFu8idNzvx8VI75fWFO8idNzvx8VI75fWFO8idNzvStzq7pIqFu8idNzvStzq75fWFO8idNzvStzq75fWFO6ppnbvStzq7pIqFu6ppnbvStzq7pIqFu8idNzvStzq7pIqFu8idNzvStzq7pIqFu6ppnbvStzq7pIqFu6ppnbvx8VI7pIqFu8idNzvx8VI7pIqFu8idNzvx8VI7pIqFu6ppnbvx8VI75fWFO6ppnbvx8VI75fWFO8idNzvx8VI7B9aPO8idNzuSOSg4B9aPOxSTg7uSOSg4xmqPuxSTg7uSOSg4xmqPu8idNzuSOSg4B9aPO8idNztKNVC5xmqPu8idNztKNVC5xmqPuxSTg7tKNVC5B9aPOxSTg7tKNVC5B9aPOxSTg7tKNVC5xmqPuxSTg7tKNVC5xmqPuxSTg7uSOSg4B9aPOxSTg7uSOSg4/3//f////7//f/9/////v/9//3////+//3//f////7//////////P/////////8//////////z//////////P/////////8//////////z8AAP9/zo0AAAAA/3+cggAAAAD/fy6AAAAAAP9/PqAAAAAA/3//fwAAAAD/f/9/AAAAAP9//38AAAAA/3//fwAA////f86N//////9/LoD//////3+cgv//////f/9///////9/PqD///9/pFL///+//3+kUv///7//f6RS////v/9/pFL///+/AAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f///////P/9///////8//3///////z//f///////P/9///////8//3///////z8uEP9//38AAC4Q/3//fwAALhD/f/9/AAAuEP9//38AAP///3//f///////f/9///////9//3///////3//f////3//f////7//f/9/////v/9//3////+//3//f////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v9Dv/3//f///0O//f/9////Q7/9//3///9Dv/3//f////38AAP///7//fwAA/v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD/0P+//38AAP//D9r/fwAA//9Z2f9/AAAVyv+//38AAP//xdb/fwAA//872v9/AADEzv+//38AAEnN/7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9//3////+//3//f////7//f/9/////v/9//3////+/////f/9///////9//3///////3//f///////f/9/////////////P/////////8//////////z//////////P/9//3////+//3//f////7//f/9/////v/9//3////+//////////z//////////P/////////8//////////z//fwAA////v/9/AAD///+//38AAP///7//fwAA////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tqmdw")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hata6"]
+_surfaces = [{
+"aabb": AABB(-0.009645986, -0.0017640155, -3.4034452e-05, 0.019291973, 0.0019065343, 0.013596952),
+"format": 34359742465,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAgAEAAAABQADAAEAAQAAAAUAAwAGAAIABAACAAYABgADAAUAAAAEAAcABgAHAAQABwAFAAAABQAHAAYACAAJAAoACgALAAgACwAKAAwADAAKAAkADAANAAsADgAJAAgACQAOAAwADQAMAA4ACAAPAA4ADgAPAA0A"),
+"name": "Kitchen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("MwoevJfCO7oAN148MwoePJfCO7oAN148MwoePJfCO7o3wA64MwoePBdxFTkAN148MwoevJfCO7o3wA64MwoevBdxFTkAN148MwoePBdxFTk3wA64MwoevBdxFTk3wA64REsdvIapJLr91Fo8rdoJvIo257r91Fo8rdoJvIo257pt3kc8REsdvIapJLpt3kc8wdoJPIo257pt3kc8WEsdPIapJLpt3kc8wdoJPIo257r91Fo8WEsdPIapJLr91Fo8")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q1kl3"]
+resource_name = "Stove_door_01"
+_surfaces = [{
+"aabb": AABB(-0.009645986, -0.0017640155, -3.4034452e-05, 0.019291973, 0.0019065343, 0.013596952),
+"attribute_data": PackedByteArray("AHCfN6Ckkz66Vmk+oKSTPijdZD7Q7OA+EPuPO9Ds4D4AcJ83znqcPhD7jzvQ7OA+KN1kPtDs4D66Vmk+znqcPtDCXj1G+No+QEcxPkb42j5ARzE+UCHXPtDCXj1QIdc+sNDxPFAh1z7avUo+UCHXPtq9Sj5E+No+sNDxPET42j5ARzE+RvjaPtDCXj1G+No+0MJePVAh1z5ARzE+UCHXPtq9Sj5QIdc+sNDxPFAh1z6w0PE8RPjaPtq9Sj5E+No+8M5aPbbEjT7irHk9tsSNPuKseT08iJE+8M5aPTyIkT763Cs+tsSNPnaUMz62xI0+dpQzPjyIkT763Cs+PIiRPuKseT22xI0++twrPrbEjT763Cs+PIiRPuKseT08iJE++twrPkZ/kT52lDM+qs2NPvDOWj2qzY0+4qx5PUZ/kT763Cs+Rn+RPuKseT1Gf5E+8M5aParNjT52lDM+qs2NPg=="),
+"format": 34359742487,
+"index_count": 66,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgA"),
+"material": SubResource("StandardMaterial3D_p5vdx"),
+"name": "Kitchen",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 44,
+"vertex_data": PackedByteArray("MwoevJfCO7oAN148MwoePJfCO7oAN148MwoePJfCO7o3wA64MwoevJfCO7o3wA64MwoevBdxFTkAN148MwoevBdxFTk3wA64MwoePBdxFTk3wA64MwoePBdxFTkAN148MwoevBdxFTk3wA64MwoevBdxFTkAN148MwoevJfCO7oAN148MwoevJfCO7o3wA64MwoevBdxFTkAN148MwoePBdxFTkAN148MwoePJfCO7oAN148MwoevJfCO7oAN148MwoePBdxFTkAN148MwoePBdxFTk3wA64MwoePJfCO7o3wA64MwoePJfCO7oAN148MwoePBdxFTk3wA64MwoevBdxFTk3wA64MwoevJfCO7o3wA64MwoePJfCO7o3wA64REsdvIapJLr91Fo8rdoJvIo257r91Fo8rdoJvIo257pt3kc8REsdvIapJLpt3kc8wdoJPIo257r91Fo8WEsdPIapJLr91Fo8WEsdPIapJLpt3kc8wdoJPIo257pt3kc8rdoJvIo257r91Fo8wdoJPIo257r91Fo8wdoJPIo257pt3kc8rdoJvIo257pt3kc8wdoJPIo257pt3kc8WEsdPIapJLpt3kc8REsdvIapJLpt3kc8rdoJvIo257pt3kc8wdoJPIo257r91Fo8rdoJvIo257r91Fo8REsdvIapJLr91Fo8WEsdPIapJLr91Fo8/38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f///////P/9///////8//3///////z//f///////PwAA/3//f/8/AAD/f/9//z8AAP9//3//PwAA/3//f/8//3//f////7//f/9/////v/9//3////+//3//f////7////9//3//v////3//f/+/////f/9//7////9//3//v/////////8//////////z//////////P/////////8/ZEGaPmTBsaBkQZo+ZMGxoGRBmj5kwbGgZEGaPmTBsaCavpo+ZMFM35q+mj5kwUzfmr6aPmTBTN+avpo+ZMFM3/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//////////z//////////P/////////8//////////z//f/9/////v/9//3////+//3//f////7//f/9/////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hata6")
+
+[node name="Stove_01" type="MeshInstance3D" unique_id=2095468050]
+transform = Transform3D(-100, 3.8941438e-05, -2.842171e-12, 0, 5.9604645e-06, 100, 3.8941438e-05, 100, -1.1920929e-05, 0, 0, 0)
+mesh = SubResource("ArrayMesh_bgg4n")
+
+[node name="Stove_door_01" type="MeshInstance3D" parent="." unique_id=2089703187]
+transform = Transform3D(0.46244428, 0, 0, 0, 0.46244428, 0, 0, 0, 0.46244428, 6.377697e-06, -0.00470964, -0.0028986866)
+mesh = SubResource("ArrayMesh_q1kl3")

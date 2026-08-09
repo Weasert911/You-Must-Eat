@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://cd66vu8uf7h4j"]
+
+[ext_resource type="PackedScene" uid="uid://boink16s0kovw" path="res://Kitchen/refrigerator_02.tscn" id="2_2vekm"]
+[ext_resource type="PackedScene" uid="uid://cm7hwedoeivp4" path="res://Kitchen/cooking_pot.tscn" id="3_wuoie"]
+[ext_resource type="PackedScene" uid="uid://cml248qkktv2x" path="res://Kitchen/refrigerator.tscn" id="3_yx171"]
+[ext_resource type="PackedScene" uid="uid://vj5qp5kfeg5u" path="res://Kitchen/sarten_02.tscn" id="4_bvhbk"]
+[ext_resource type="PackedScene" uid="uid://dinn1whl018yf" path="res://Kitchen/stove.tscn" id="4_yhmtn"]
+[ext_resource type="PackedScene" uid="uid://bnlxpspqpm35e" path="res://Kitchen/vaso.tscn" id="5_cpsxm"]
+[ext_resource type="PackedScene" uid="uid://ht31otwrgimv" path="res://Kitchen/microwave_03.tscn" id="5_gwjdr"]
+[ext_resource type="PackedScene" uid="uid://cgqu2c7rhk3u1" path="res://Kitchen/dish.tscn" id="6_hmewc"]
+[ext_resource type="PackedScene" uid="uid://dlvs5dk1et0vr" path="res://Kitchen/refrigerator_04.tscn" id="6_lvtmh"]
+[ext_resource type="PackedScene" uid="uid://dw00t5bsrqjda" path="res://Kitchen/fork.tscn" id="7_7ged1"]
+[ext_resource type="PackedScene" uid="uid://csl68quwevdmu" path="res://Kitchen/stove_02.tscn" id="7_yyih5"]
+[ext_resource type="Script" uid="uid://miqt01kb4lgm" path="res://Scripts/Anomaly Object Script.gd" id="8_hmewc"]
+[ext_resource type="PackedScene" uid="uid://bbw7bg67hk0s4" path="res://Kitchen/blender.tscn" id="8_qjyg3"]
+[ext_resource type="PackedScene" uid="uid://cxvh5ptxxtnah" path="res://Assets/low-poly-psx-wall-lamp-with-canopy/source/WallLamp.fbx" id="9_elkpi"]
+[ext_resource type="PackedScene" uid="uid://cnitrhi8bno1h" path="res://Kitchen/table.tscn" id="10_yhmtn"]
+[ext_resource type="PackedScene" uid="uid://smp27vxct4bu" path="res://Assets/ps1-chair/source/PS1 chairs/chairs.gltf" id="11_gwjdr"]
+[ext_resource type="Shader" uid="uid://blktexc4010s6" path="res://Shaders/PS1 TYPECASTER.gdshader" id="13_bvhbk"]
+[ext_resource type="PackedScene" uid="uid://d2s3ma7qofwig" path="res://Kitchen/knife.tscn" id="17_0mevm"]
+[ext_resource type="PackedScene" uid="uid://ussg6o1fj4t4" path="res://Kitchen/spoon.tscn" id="18_w2501"]
+[ext_resource type="Material" uid="uid://crxy8nfy1kptc" path="res://Shaders/CCTV.tres" id="19_cpsxm"]
+[ext_resource type="Script" uid="uid://dtj7vvijlp3iu" path="res://Scripts/cctv_manager.gd" id="20_cpsxm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hmewc"]
+render_priority = 0
+shader = ExtResource("13_bvhbk")
+shader_parameter/base_color = Color(1, 0.6445163, 0, 1)
+shader_parameter/jitter = 1.0
+shader_parameter/resolution_scale = 80.0
+
+[sub_resource type="Environment" id="Environment_wuoie"]
+ambient_light_color = Color(0.19793725, 0.19793722, 0.19793722, 1)
+ambient_light_sky_contribution = 0.3
+tonemap_mode = 3
+tonemap_exposure = 1.13
+tonemap_white = 16.0
+ssao_enabled = true
+ssao_radius = 0.45
+ssao_intensity = 4.1
+ssao_detail = 5.0
+glow_enabled = true
+glow_bloom = 1.0
+adjustment_enabled = true
+adjustment_contrast = 1.005
+adjustment_saturation = 2.0
+
+[node name="Node3D" type="Node3D" unique_id=807947367]
+
+[node name="Envirnment" type="Node3D" parent="." unique_id=1417360634]
+transform = Transform3D(1, 0, 0, 0, -0.023716772, 0.9997187, 0, -0.9997187, -0.023716772, 0, 1.6486431, -0.007584255)
+
+[node name="Refrigerator_03" parent="Envirnment" unique_id=1868277735 instance=ExtResource("2_2vekm")]
+transform = Transform3D(1000, -2.7240937e-06, 1.7081536e-06, -8.53248e-05, 0.7390146, 19.533504, -8.947157e-05, -31.151236, 0.463402, 1.2401333e-07, -2.0265553, -0.27823782)
+
+[node name="Refrigerator_07" parent="Envirnment" unique_id=1557242120 instance=ExtResource("2_2vekm")]
+transform = Transform3D(1000, -2.7240937e-06, 1.7081536e-06, -8.53248e-05, 0.7390146, 19.533504, -8.947157e-05, -31.151236, 0.463402, 4.6474867e-07, 1.869906, -0.18580031)
+
+[node name="Refrigerator_05" parent="Envirnment" unique_id=865460064 instance=ExtResource("2_2vekm")]
+transform = Transform3D(-7.6293945e-05, -2.724094e-06, 19.539, -999.71875, 0.7390146, -9.1289417e-07, -23.716772, -31.151236, -1.7302912e-06, 2.2356553, 0.2586943, -0.22402406)
+
+[node name="Refrigerator_06" parent="Envirnment" unique_id=1271342109 instance=ExtResource("2_2vekm")]
+transform = Transform3D(-7.6293945e-05, -2.724094e-06, 19.539, -999.71875, 0.7390146, -9.1289417e-07, -23.716772, -31.151236, -1.7302912e-06, -1.6557, 0.25869444, -0.2240237)
+
+[node name="Cooking_pot" parent="Envirnment" unique_id=1848142209 instance=ExtResource("3_wuoie")]
+transform = Transform3D(45.60541, 0, 0, 0, 43.77272, -1.4851675, 0, 1.0384345, 62.603683, -0.42706496, -1.795135, -1.0034404)
+
+[node name="Sarten_02" parent="Envirnment" unique_id=1791410888 instance=ExtResource("4_bvhbk")]
+transform = Transform3D(3.497713, 1.724523, 5.5134296e-07, -2.2538338, 2.6747737, -0.19751096, -0.053468723, 0.06345442, 8.325596, -0.88732237, -1.7572637, -1.0276773)
+
+[node name="Vaso" parent="Envirnment" unique_id=1573233708 instance=ExtResource("5_cpsxm")]
+transform = Transform3D(33.098362, 0, 0, 0, 26.183594, -0.81385934, 0, 0.6211619, 34.306316, 1.4035658, 0.7409372, -1.1031079)
+
+[node name="Dish" parent="Envirnment" unique_id=1297071596 instance=ExtResource("6_hmewc")]
+transform = Transform3D(70.18, 0, 0, 0, 70.16026, -1.6644341, 0, 1.6644341, 70.16026, 1.1594347, 0.8190409, -1.1266677)
+
+[node name="Table" parent="Envirnment" unique_id=1464856808 instance=ExtResource("10_yhmtn")]
+transform = Transform3D(0.48293373, -0.0016229706, -0.12950812, -0.12950987, -0.01174831, -0.48279306, -0.0014758852, 0.49985933, -0.01176769, 1.0690305, 0.5206166, -1.6377528)
+
+[node name="chairs" parent="Envirnment" unique_id=1042381875 instance=ExtResource("11_gwjdr")]
+transform = Transform3D(-0.12695411, -2.982871e-06, -0.37931865, -0.379212, -0.011122604, 0.12691848, -0.008994783, 0.46896106, 0.0030077817, 1.205292, 1.0791026, -1.2651002)
+
+[node name="chairs2" parent="Envirnment" unique_id=1579922802 instance=ExtResource("11_gwjdr")]
+transform = Transform3D(-0.39989826, 0, -0.009019058, -0.009016521, -0.01112537, 0.39978582, -0.00021390295, 0.46896097, 0.009484297, 1.5245333, 0.3950629, -1.2890728)
+script = ExtResource("8_hmewc")
+position_attempts = 12
+
+[node name="Knife" parent="Envirnment" unique_id=528832823 instance=ExtResource("17_0mevm")]
+transform = Transform3D(13.317022, 12.69646, 7.4559756e-07, -10.444947, 16.178537, -0.65538996, -0.2477901, 0.3838097, 27.626297, 1.0050788, 0.96620333, -1.1220645)
+
+[node name="Spoon" parent="Envirnment" unique_id=1018156417 instance=ExtResource("18_w2501")]
+transform = Transform3D(16.29877, -3.2107332, -1.6025795e-07, 2.290288, 22.836235, -0.6246986, 0.054333527, 0.5417532, 26.332592, 1.334021, 0.865862, -1.1211994)
+
+[node name="Fork" parent="Envirnment" unique_id=1155535411 instance=ExtResource("7_7ged1")]
+transform = Transform3D(17.925348, 11.435488, 2.2351742e-06, -12.240457, 16.73711, -0.7114997, -0.29038578, 0.39705947, 29.991562, 1.0318671, 0.94627994, -1.1241682)
+
+[node name="CSGs" type="Node3D" parent="Envirnment" unique_id=761282237]
+
+[node name="Refrigerator" parent="Envirnment/CSGs" unique_id=596555702 instance=ExtResource("3_yx171")]
+transform = Transform3D(0, 391.57962, 9.393534e-06, 1.1397973, 2.7677478e-07, -315.10574, -48.04511, -1.1666688e-05, -7.475414, 0.55312276, -1.8024534, 0.24013567)
+
+[node name="Kitchen" type="Node3D" parent="Envirnment" unique_id=220526738]
+transform = Transform3D(-4.371139e-06, 50, 2.1855694e-06, -99.97187, -2.13312e-06, -1.1858386, -2.3716772, -2.2367892e-06, 49.985935, -0.06608511, -1.6361341, -1.4500576)
+
+[node name="Refrigerator" parent="Envirnment/Kitchen" unique_id=746310597 instance=ExtResource("3_yx171")]
+transform = Transform3D(0.2229558, 0.17841698, -3.1221137e-16, -0.43329692, 0.3672225, -6.6670243e-09, 1.2503086e-08, 2.0367644e-08, 0.4793293, 0.0020326786, -0.028059512, 0.0059169866)
+
+[node name="Stove" parent="Envirnment/Kitchen" unique_id=601036675 instance=ExtResource("4_yhmtn")]
+transform = Transform3D(3.5613448e-07, 0.545507, -6.67572e-08, -1.6444852, 4.7254625e-07, -4.935853e-08, -7.188274e-08, 6.914141e-08, 1.1291906, 0.0023771375, -0.011931181, 0.0031906525)
+
+[node name="Microwave_03" parent="Envirnment/Kitchen" unique_id=1529906115 instance=ExtResource("5_gwjdr")]
+transform = Transform3D(-0.10498998, -0.044483833, 4.4703485e-09, -0.08373533, 0.223101, -3.45888e-08, -2.766118e-09, 3.7617227e-08, 0.227753, -0.008273694, -0.030284775, 0.006465298)
+script = ExtResource("8_hmewc")
+
+[node name="Refrigerator_02" parent="Envirnment/Kitchen" unique_id=23636150 instance=ExtResource("2_2vekm")]
+transform = Transform3D(0.5, -3.5527137e-15, 0, 0, 1.2348859, -3.5527137e-15, 0, 7.1054274e-15, 1.0441116, 0.00043888204, 0.011121153, 0.006034946)
+
+[node name="Refrigerator_04" parent="Envirnment/Kitchen" unique_id=522226765 instance=ExtResource("6_lvtmh")]
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 0, 0, 0)
+
+[node name="Stove_02" parent="Envirnment/Kitchen" unique_id=227773236 instance=ExtResource("7_yyih5")]
+transform = Transform3D(0.99962497, 0.027381219, -4.736228e-14, 0.054762438, -1.9992499, 2.622683e-07, 7.181157e-09, -1.429607e-07, -2, -0.0063569294, -0.036949635, -0.007665216)
+
+[node name="Blender" parent="Envirnment/Kitchen" unique_id=1057792272 instance=ExtResource("8_qjyg3")]
+transform = Transform3D(0.10417168, -0.12703517, -1.512843e-08, 0.27474102, 0.19266823, -1.10945155e-08, 3.684578e-08, -2.1865755e-08, 0.2538129, -0.004021204, -0.030039141, 0.005856324)
+script = ExtResource("8_hmewc")
+
+[node name="Table2" parent="Envirnment" unique_id=1744354522 instance=ExtResource("10_yhmtn")]
+transform = Transform3D(6.556529e-08, -1.0000199, 1.9921417e-05, 0.05217705, 8.207178e-08, 236.63342, -2.1993876, -8.748688e-08, 5.613763, 3.264458, 6.831998, -1.487026)
+
+[node name="Table3" parent="Envirnment" unique_id=827430340 instance=ExtResource("10_yhmtn")]
+transform = Transform3D(-6.289365e-08, 0.9931307, -4.745141e-05, 0.05181759, -1.7942479e-07, -235.00331, -2.1842353, -9.261002e-08, -5.5750856, -2.9479904, 6.8322206, -1.4870232)
+
+[node name="Table5" parent="Envirnment" unique_id=1682885459 instance=ExtResource("10_yhmtn")]
+transform = Transform3D(7.450581e-09, 0.015269995, -235.04164, 0.051817678, -0.992734, -3.613316, -2.1842353, -0.02355117, -0.08571792, -2.9293845, 3.0126877, -1.554931)
+
+[node name="Table4" parent="Envirnment" unique_id=1733154164 instance=ExtResource("10_yhmtn")]
+transform = Transform3D(-7.450581e-09, 2.221932e-07, 236.7001, 0.05217694, 0.99973875, -5.9078204e-05, -2.199387, 0.023717156, 5.0634685e-07, -2.9479904, -3.108017, -1.7228398)
+
+[node name="Fork2" parent="Envirnment" unique_id=744715203 instance=ExtResource("7_7ged1")]
+transform = Transform3D(11047.888, 0, 0, 0, 3233.9546, -2.0550773, 0, 76.72015, 86.62686, -0.34325254, 5.215846, -1.5253692)
+
+[node name="Vaso2" parent="Envirnment" unique_id=267892973 instance=ExtResource("5_cpsxm")]
+transform = Transform3D(666.5201, 0, 0, 0, -32.847256, -968.7281, 0, 1384.5963, -22.981382, 0.034106016, 3.968309, -1.489426)
+surface_material_override/0 = SubResource("ShaderMaterial_hmewc")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1411811356]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D" unique_id=20030784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2689303, 0)
+
+[node name="WallLamp" parent="Node3D" unique_id=1631815924 instance=ExtResource("9_elkpi")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 1.4133646, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=2066419101]
+environment = SubResource("Environment_wuoie")
+
+[node name="shader" type="CanvasLayer" parent="." unique_id=158540671]
+
+[node name="ColorRect2" type="ColorRect" parent="shader" unique_id=1256210830]
+top_level = true
+material = ExtResource("19_cpsxm")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CCTV Manager" type="Node3D" parent="." unique_id=571148136 node_paths=PackedStringArray("cameras", "anomaly_objects")]
+script = ExtResource("20_cpsxm")
+cameras = [NodePath("Camera1"), NodePath("Camera2"), NodePath("Camera3")]
+glitch_material = ExtResource("19_cpsxm")
+anomaly_objects = [NodePath("../Envirnment/chairs2")]
+
+[node name="Camera1" type="Camera3D" parent="CCTV Manager" unique_id=1236218209]
+transform = Transform3D(-0.99324024, -0.029681435, -0.112218775, -0.033662993, 0.99886316, 0.03375325, 0.111089304, 0.037302718, -0.9931102, -1.3319254, 1.1831392, -1.4066873)
+fov = 60.0
+
+[node name="Camera2" type="Camera3D" parent="CCTV Manager" unique_id=316775245]
+transform = Transform3D(0.9940085, -0.080932364, -0.07346459, 0.10151191, 0.93275183, 0.34593245, 0.04052721, -0.35131738, 0.9353788, -0.4874517, 0.976068, 2.1257367)
+fov = 60.0
+
+[node name="Camera3" type="Camera3D" parent="CCTV Manager" unique_id=1080114805]
+transform = Transform3D(-0.27357027, -0.12881832, 0.95318675, -0.04060877, 0.9916544, 0.12236194, -0.9609943, -0.0052332315, -0.2765185, 2.1852605, 0.85927165, -0.39470243)
+fov = 60.0

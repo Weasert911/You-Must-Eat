@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://crxy8nfy1kptc"]
+
+[ext_resource type="Shader" uid="uid://b2ynn8y5dfwb0" path="res://Shaders/ps1s.gdshader" id="1_s7t0e"]
+
+[resource]
+shader = ExtResource("1_s7t0e")
+shader_parameter/pixel_size = 3.0
+shader_parameter/color_depth = 3.25
+shader_parameter/curvature = 2.415
+shader_parameter/bulge = 0.09
+shader_parameter/vignette_strength = 0.35
+shader_parameter/scanline_opacity = 0.186
+shader_parameter/scanline_count = 52.58
+shader_parameter/signal_jitter = 0.001
+shader_parameter/rolling_bar_speed = 14.185
+shader_parameter/static_amount = 0.04
+shader_parameter/sequence_progress = 0.0
+shader_parameter/green_tint = Color(1, 1, 1, 1)

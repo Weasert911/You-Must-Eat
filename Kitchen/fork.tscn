@@ -1,0 +1,48 @@
+[gd_scene format=4 uid="uid://dw00t5bsrqjda"]
+
+[ext_resource type="Texture2D" uid="uid://dswdutn48m1ml" path="res://Assets/electronics-kitchen/source/Electronics_kitchen/Electronics_kitchen/Textures/Cutlery.png" id="1_rjq7t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wdf3r"]
+resource_name = "Cutlery"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_rjq7t")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7nd7l"]
+_surfaces = [{
+"aabb": AABB(-0.0007329209, -0.0069404556, -0.00017164098, 0.0013291477, 0.008082011, 0.00039263623),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYACAAJAAoACgAJAAgACAALAAoACgALAAgADAAJAAoACgAJAAwACgANAAwADAANAAoA"),
+"lods": [0.0006606143, PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA")],
+"name": "Cutlery",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("VDuRuTyglTqG+jM5VDuRuWO8MruG+jM5VDuRuWO8MruG+jO5VDuRuTyglTqG+jO5VDuROTyglTqG+jM5VDuROWO8MruG+jO5VDuROWO8MruG+jM5VDuROTyglTqG+jO5gzsMusNs47v2umc5gC4mui9gm7sql564H1kCOv20mbsql564G0wcOpLB4bv2umc5fSFAujSnJruFdMA2RMzQOdFQI7uFdMA2")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bjr1r"]
+resource_name = "Fork"
+_surfaces = [{
+"aabb": AABB(-0.0007329209, -0.0069404556, -0.00017164098, 0.0013291477, 0.008082011, 0.00039263623),
+"attribute_data": PackedByteArray("DR11PnnMXj8NHXU+blpVPzWScT5uWlU/NpJxPnnMXj+w4HU+TN5XPzYpcD5M3lc/NilwPtu0WD+w4HU+27RYP2rMdD6rk1U/asx0PrUFXz+TQXE+tQVfP5JBcT6rk1U/NilwPkzeVz+w4HU+TN5XP7DgdT7btFg/NilwPtu0WD+w4HU+I/JeP7DgdT4agFU/NilwPhqAVT82KXA+IvJePzYpcD4j8l4/NilwPhqAVT+w4HU+GoBVP7DgdT4i8l4/fm3HPUBpojx+bcc96IcPPijoAj3ohw8+KOgCPUBpojwo6AI96IcPPn5txz3ohw8+fm3HPVZhhT4o6AI9VmGFPn5txz1AaaI8KOgCPUBpojwo6AI96IcPPn5txz3ohw8+fm3HPVZhhT5+bcc96IcPPijoAj3ohw8+KOgCPVZhhT4="),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQA"),
+"lods": [0.0006606143, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA")],
+"material": SubResource("StandardMaterial3D_wdf3r"),
+"name": "Cutlery",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("VDuRuTyglTqG+jM5VDuRuWO8MruG+jM5VDuRuWO8MruG+jO5VDuRuTyglTqG+jO5VDuROTyglTqG+jM5VDuRuTyglTqG+jM5VDuRuTyglTqG+jO5VDuROTyglTqG+jO5VDuROWO8MruG+jM5VDuROTyglTqG+jM5VDuROTyglTqG+jO5VDuROWO8MruG+jO5VDuRuWO8MruG+jM5VDuROWO8MruG+jM5VDuROWO8MruG+jO5VDuRuWO8MruG+jO5VDuROWO8MruG+jO5VDuROTyglTqG+jO5VDuRuTyglTqG+jO5VDuRuWO8MruG+jO5VDuRuWO8MruG+jM5VDuRuTyglTqG+jM5VDuROTyglTqG+jM5VDuROWO8MruG+jM5gzsMusNs47v2umc5gC4mui9gm7sql564H1kCOv20mbsql564G0wcOpLB4bv2umc5H1kCOv20mbsql564gC4mui9gm7sql564fSFAujSnJruFdMA2RMzQOdFQI7uFdMA2gzsMusNs47v2umc5G0wcOpLB4bv2umc5H1kCOv20mbsql564gC4mui9gm7sql564fSFAujSnJruFdMA2gC4mui9gm7sql564H1kCOv20mbsql564RMzQOdFQI7uFdMA2AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z//f///////P/9///////8//3///////z//f///////P////3//f/+/////f/9//7////9//3//v////3//f/+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7///////v//P/////////8///////7//z///////v//P/9//3/+//+//3//f////7//f/9//v//v/9//3/+//+/UX8aj4MFPb1RfxqPgwU9vVF/Go+DBT29UX8aj4MFPb0zgHJ7gwU9vTOAcnuDBT29M4Bye4MFPb0zgHJ7gwU9vePwrgCDBcFC4/CuAIMFwULj8K4AgwXBQuPwrgCDBcFCjQTK/4MFwUKNBMr/gwXBQo0Eyv+DBcFCjQTK/4MFwUI=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7nd7l")
+
+[node name="Fork" type="MeshInstance3D" unique_id=1155535411]
+transform = Transform3D(73.12977, 0, 0, 0, -8.717748e-06, 73.12976, 0, -73.12976, -8.717748e-06, 0, 0, 0)
+mesh = SubResource("ArrayMesh_bjr1r")
