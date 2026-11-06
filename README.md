@@ -1,20 +1,21 @@
-# X
+# You Must Eat
 
-Working repository for **YOU MUST EAT** — a single-player narrative stealth-FPS set in Dharavi, Mumbai. The design suite defines the game; the playable slice grows toward it.
+A first-person CCTV surveillance demo. Take the watch: fixed cameras, a mouse to swivel each feed, and anomalies that only show if you keep looking.
 
-## What's here
+## How it plays
 
-- `docs/` — the design suite: [Master GDD](docs/MASTER_GDD.md) (v4.0), [Demo Design Document](docs/DEMO_DESIGN_DOCUMENT.md) (vertical-slice scope), [Gameplay Spec](docs/GAMEPLAY_SPEC.md), [Technical Art Spec](docs/TECHNICAL_ART_SPEC.md). Superseded revisions live in `docs/archive/`.
-- `GAME/game-files/` — the playable slice: first-person movement, weapon and pickup systems (pistol / SMG resources, weapon manager, hit feedback, crosshair), interaction prompts, FPS meter, and GameManager + save-system autoloads.
+- Switch between the fixed cameras and look around each feed
+- Randomized live events keep the feeds honest: camera drift, wrong-frame glitches, sensor noise
+- One location — the kitchen — with objects (a chair, plates, lights) that can rearrange themselves between shots; anomaly objects are configured in `Scripts/cctv_manager.gd`
 
-## Design pillars
+## Run it
 
-- **Shadow Merge ("Hashing Shadows")** — shadows are sanctuary, light is exposure
-- **High-contrast look** — black, white, and blood red; bold outlines through the comic-ink post-process pipeline
-- **Underdog tension** — stealth first, combat optional and risky; not a power fantasy
+Open `project.godot` in Godot and run the project.
+
+## Tech
+
+Godot 4.6 · GDScript + a glitch shader material for camera faults
 
 ## Status
 
-Prototype. The slice proves weapon and movement systems while design work continues.
-
-Built with **Godot 4.7** (Forward+), GDScript and GDShader.
+Standalone prototype of a surveillance loop.
